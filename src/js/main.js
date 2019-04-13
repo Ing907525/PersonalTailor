@@ -25,7 +25,7 @@ require.config({
 		}
 	},
 	paths:{
-		"jquery": ["js/jQuery/jquery-1.11.0"],
+		"jquery": ["js/jquery/jquery-1.11.0"],
 		"stars" : "js/stars",
 		"bootstrap" : "js/bootstrap/bootstrap.min",
 		"Typping" : "js/print/Typping",
