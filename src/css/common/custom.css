@@ -1,0 +1,217 @@
+@charset 'utf-8';
+html{-ms-overflow-style:scrollbar;} 		/* 使用bootstrap引起IE浏览器滚动条变为透明的并且不占用页面宽度的问题以及解决办法 */
+.weichat{display: inline-block;width: 18px;height: 15px;background: url(../img/weichat.png) center no-repeat;margin-bottom: -2px}
+.phone{display: inline-block;width: 14px;height: 16px;background: url(../img/phone.png) center no-repeat;margin-bottom: -2px}
+a{text-decoration: none;}
+a:hover{text-decoration: none !important;}
+
+/* 默认按钮 */
+.btn-auto{color: #333;padding: 7px 31px;}
+.btn-auto:link,.btn-auto:focus, .btn-auto:visited, .btn-auto:hover, .btn-auto:active{text-decoration: none;color: #333;outline: none;}
+
+/* 注册按钮 */
+.btn-regist{background: #ff5201;padding: 7px 31px;color: #fff;}
+.btn-regist:link,.btn-regist:focus, .btn-regist:visited, .btn-regist:hover, .btn-regist:active{text-decoration: none;color: #fff;outline: none;}
+
+/* 确认按钮 */
+.btn-confirm{background: #ff8201;padding: 7px 31px;color: #fff;}
+.btn-confirm:link,.btn-confirm:focus, .btn-confirm:visited, .btn-confirm:hover, .btn-confirm:active{text-decoration: none;color: #fff;outline: none;}
+
+/* 新增按钮 */
+.btn-add{background: #f2672a;padding: 7px 31px;color: #fff;margin: 15px;}
+.btn-add:link,.btn-add:focus, .btn-add:visited, .btn-add:hover, .btn-add:active{text-decoration: none;color: #fff;outline: none;}
+
+/* 刪除按鈕 */
+.btn-delete{background: #f5f7fc;padding: 6px 9px 4px 7px;color: #fff;border-radius: 30px;position: relative;}
+.btn-delete:link,.btn-delete:focus, .btn-delete:hover, .btn-delete:active{text-decoration: none;color: #fff;outline: none;background-image: none;background: #7c99db;}
+.btn-delete:before{content: '删除';width: 90px;height: 41px;line-height:41px;background: url(../img/hover-show-bg.png) center no-repeat;position: absolute;top: -42px;left: -32px;color: #000;display: none;}
+.btn-delete:hover:before{display: inline-block;}
+.btn-delete i{color: #000;}
+.btn-delete:hover i{color: #fff;}
+/* 修改按鈕 */
+.btn-update{background: #f5f7fc;padding: 5px 9px 4px 5px;color: #fff;border-radius: 30px;position: relative;}
+.btn-update:link,.btn-update:focus, .btn-update:hover, .btn-update:active{text-decoration: none;color: #fff;outline: none;background-image: none;background: #7c99db;}
+.btn-update:before{content: '修改';width: 90px;height: 41px;line-height:41px;background: url(../img/hover-show-bg.png) center no-repeat;position: absolute;top: -42px;left: -32px;color: #000;display: none;}
+.btn-update:hover:before{display: inline-block;}
+.btn-update i{color: #000;}
+.btn-update i:hover{color: #fff;}
+.btn-update:hover>.glyphicon-update:before{background: url(../img/glyphicon-update-show.png) center no-repeat;}
+.glyphicon-update{position: relative;display: inline-block;width: 16px;height: 16px;}
+.glyphicon-update:before{content:' ';background: url(../img/glyphicon-update.png) center no-repeat;width: 16px;height: 16px;display: inline-block;position: absolute;top: 1px;left: 1px;}
+
+/* 查看按鈕 */
+.btn-examine{background: #f5f7fc;padding: 5px 8px 4px 6px;color: #fff;border-radius: 30px;position: relative;}
+.btn-examine:link,.btn-examine:focus, .btn-examine:hover, .btn-examine:active{text-decoration: none;color: #fff;outline: none;background-image: none;background: #7c99db;}
+.btn-examine:before{content: '查看';width: 90px;height: 41px;line-height:41px;background: url(../img/hover-show-bg.png) center no-repeat;position: absolute;top: -42px;left: -32px;color: #000;display: none;}
+.btn-examine:hover:before{display: inline-block;}
+.btn-examine i{color: #000;}
+.btn-examine i:hover{color: #fff;}
+.btn-examine:hover>.glyphicon-examine:before{background: url(../img/glyphicon-examin-show.png) center no-repeat;}
+.glyphicon-examine{position: relative;display: inline-block;width: 16px;height: 16px;}
+.glyphicon-examine:before{content:' ';background: url(../img/glyphicon-examine.png) center no-repeat;width: 16px;height: 16px;display: inline-block;position: absolute;top: 1px;left: 1px;}
+
+/* 开启按鈕 */
+.btn-start{background: #85c593;padding: 5px 8px 5px 8px;color: #fff;border-radius: 30px;position: relative;}
+.btn-start:link,.btn-start:focus, .btn-start:hover, .btn-start:active{text-decoration: none;color: #fff;outline: none;background-image: none;background: #f05050;}
+.btn-start:before{content: '开启';width: 90px;height: 41px;line-height:41px;background: url(../img/hover-show-bg.png) center no-repeat;position: absolute;top: -42px;left: -32px;color: #000;display: none;}
+.btn-start:hover:before{display: inline-block;}
+.btn-start i{color: #000;}
+.btn-start:hover i{color: #fff;}
+.btn-start:hover i:before{content: '\e072'}
+
+/* 颜色 */
+.color-ff5201{color: #ff5201;}
+.color-fff{color: #fff;}
+.color-00b7ee{color: #00b7ee;}
+.color-5ef2e4{color: #5ef2e4;}
+.color-01a4f3{color: #01a4f3;}
+
+/* 盒子模型 */
+.m-0{margin: 0;}
+.mb-0{margin-bottom: 0;}
+.ml-5rem{margin-left: 5rem;}
+.m-15{margin: 15px;}
+.mb-15{margin-bottom: 15px;}
+
+.mt-70{margin-top: 70px;}
+
+.p-0{padding: 0;}
+.pl-0{padding-left: 0;}
+.p-15{padding: 15px;}
+.pl-15{padding-left: 15px;}
+.pr-15{padding-right: 15px;}
+.pt-15{padding-top: 15px;}
+.pb-15{padding-bottom: 15px;}
+
+
+/* 文本定位 */
+.align-right{text-align: right;}
+.align-center{text-align: center;}
+.align-left{text-align: left;}
+.align-top{vertical-align: text-top;}
+.align-middle{vertical-align: middle;}
+.align-bottom{vertical-align: text-bottom;}
+/* 文本缩进 */
+.text-indent-50{text-indent: 50px;}
+
+/* 容器定位 */
+.position-rel{position: relative;}
+.position-abs{position: absolute;}
+.position-fixed{position: fixed;}
+
+/* 容器居中 */
+.flex-middle-center{		/* 水平居中 & 垂直居中 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.flex-middle{				/* 垂直居中 */
+	display: flex;
+	align-items: center;
+}
+.flex-center{				/* 水平居中 */
+	display: flex;
+	justify-content: center;
+}
+.flex-column-middle{		/* 垂直排列，横向纵向居中 */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  	align-items: center;
+}
+.flex-column-middle{		/* 水平排列，横向纵向居中 */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  	align-items: center;
+}
+
+/* 子集溢出 */
+.overflow-hidden{overflow: hidden;}
+.overflow-auto{overflow: auto;}
+
+/* 显示 & 隐藏 */
+.show{display: block;}
+.hide-sf{display: none;}
+
+/* 鼠标悬停 */
+.cursor-pointer{cursor: pointer;}
+
+/* 边框 */
+.border-ff5201{border: #ff5201 solid 1px;}
+.border-ff8201{border: #ff8201 solid 1px;}
+.border-5ef2e4{border: #5ef2e4 solid 1px;}
+.border-01a4f3{border: #01a4f3 solid 1px;}
+.border-op-0{border: rgba(0,0,0,.1);}
+
+/* display格式化 */
+.display-inline{display: inline;}
+.display-inline-block{display: inline-block;}
+.display-block{display: block;}
+
+/* 宽度 */
+.width-10{width: 10%;}
+.width-20{width: 20%;}
+.width-30{width: 30%;}
+.width-50{width: 50%;}
+.width-60{width: 60%;}
+.width-70{width: 70%;}
+.width-80{width: 80%;}
+.width-90{width: 90%;}
+.width-100{width: 100%;}
+
+/* 高度 */
+.height-100{height: 100%;overflow: hidden;}
+.height-90{height: 90%;}
+.height-85{height: 85%;}
+.height-80{height: 80%;}
+.height-70{height: 70%;}
+.height-60{height: 60%;}
+.height-63{height: 63%;}
+.height-40{height: 40%;}
+.height-30{height: 30%;}
+.height-20{height: 20%;}
+.height-10{height: 10%;}
+
+/* 定位距离 */
+.top-0{top: 0;}
+.top-50{top: 50%;}
+.left-0{left: 0;}
+.left-9{left: 9%;}
+.left-27{left: 27%;}
+.left-45{left: 45%;}
+.left-63{left: 63%;}
+.left-81{left: 81%;}
+.left-83{left: 83%;}
+
+/* 字体 */
+.font-1{font-size: 1rem;}
+.font-1-5{font-size: 1.5rem;}
+.font-2{font-size: 2rem;}
+.font-2-5{font-size: 2.5rem;}
+.font-3{font-size: 3rem;}
+.font-3-5{font-size: 3.5rem;}
+/* 浮动 */
+.left{float: left;}
+.right{float: right;}
+.fl-none{float: none;}
+
+/* 清除浮动 */
+.clear{clear: both;}
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+
+/* 复选框开始 */
+.pro-right-middle label {font-size:12px;cursor:pointer;}
+.pro-right-middle label i {font-size:12px;font-style:normal;display:inline-block;width:12px;height:12px;text-align:center;line-height:12px;color:#fff;vertical-align:middle;margin:-2px 2px 1px 0px;border:#ff8201 1px solid;}
+input[type="checkbox"],input[type="radio"] {display:none;}
+input[type="radio"] + i {border-radius:7px;}
+input[type="checkbox"]:checked + i,input[type="radio"]:checked + i {background:#ff8201;}
+input[type="checkbox"]:disabled + i,input[type="radio"]:disabled + i {border-color:#ff8201;}
+input[type="checkbox"]:checked:disabled + i,input[type="radio"]:checked:disabled + i {background:#ff8201;}
+/* 复选框结束 */
+
+
+
+

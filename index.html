@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>个人简历-PC</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="src/css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="src/css/animate/animation.css">
+	<link rel="stylesheet" type="text/css" href="src/css/index.css">
+	<script src="src/js/jQuery/jQuery-1.11.0.js"></script>
+	<script type="text/javascript" src="src/js/weather/weather.js"></script>
+	<script type="text/javascript" src="src/js/bootstrap/bootstrap.min.js"></script>
+	<!-- 解决天气插件带来的css干扰 -->
+	<style type="text/css">
+		html,body{font-size: 12px !important;min-height: 636px;min-width: 1347px;}
+		h1, .h1, h2, h3{margin-top: 20px !important;margin-bottom: 10px !important;}
+		video{
+			position:fixed;
+			right:0;
+			bottom:0;
+			min-width:100%;
+			min-height:100%;
+			width:auto;
+			height:auto;
+		}
+	</style>
+</head>
+<body>
+	<!-- <canvas id="stars" class="position-abs"></canvas> -->
+	<div class="bg-music" onmouseover="" title="若谷歌浏览器无法播放，chrome浏览器中打开网址chrome://flags/并搜索Autoplay policy 把默认的Default改成No user gesture is required  浏览器最下面会提示RELAUNCH NOW，点击RELAUNCH NOW自动重启浏览器后将会生效"></div>
+	<video autoplay loop style="width:100%;">
+		<source src="src/files/PlexusTechParticlesBackground.mp4">
+	</video>
+	<div class="container-fluid height-100">
+		<div id="decompose" class="row height-100">
+			<!-- 分解展示 -->
+			<div id="popup" class="position-abs height-100 width-100 overflow-hidden" style="display: block;">
+				<!-- 背景&圆环 -->
+				<div id="circle" class="circle-box"></div>
+				<!-- 左侧边栏 -->
+				<div class="col-md-2 col-sm-2 col-xs-2 slide-SF p-0 slideLeft-BG height-70 position-fixed">
+					<div class="position-rel height-100">
+						<img src="src/img/bg/slideLeftBG.png" class="width-100 position-abs">
+						<div class="col-md-10 col-sm-10 col-xs-10 slideList">
+							<ul>
+								<li class="basic-information animated">基本信息</li>
+								<li class="school-professional animated">学校专业</li>
+								<li class="work-experience animated">工作经历</li>
+								<li class="professional-skill animated">专业技能</li>
+								<li class="project-experience animated">项目经验</li>
+								<li class="satellite-information animated">附属信息</li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+						<div class="five-star width-100 align-center position-abs">
+							<img src="src/img/bg/five-star.png" class="width-80">
+						</div>
+					</div>
+				</div>
+				<!-- 主体部分 -->
+				<div style="display: block;" class="col-md-10 col-sm-10 col-xs-10 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 height-100">
+					<div class="main flex-middle height-100">
+						<div class="col-md-10 col-sm-10 main-bg height-85 animated" style="display: none;">
+							<!-- 基本信息 -->
+							<div class="basic-information-detail height-100" style="display: block;">
+								<h4 class="title position-abs color-fff">基本信息</h4>
+								<div class="height-100">
+									<div class="col-md-2 col-sm-2 col-xs-2 height-30">
+										<div class="header-bg height-100">
+											<span>
+												<img src="src/img/header-img/header-img.png" class="height-100">
+											</span>
+										</div>
+									</div>
+									<div class="col-md-10 col-sm-10 col-xs-10">
+										<div id="basic-top-right" class="basic-top-right color-5ef2e4">
+											<ul>
+												<li><span>姓名：</span><span>苏锋</span></li>
+												<li><span>性别：</span><span>男</span></li>
+												<li><span>年龄：</span><span>30</span></li>
+												<li><span>民族：</span><span>汉</span></li>
+												<li><span>籍贯：</span><span>吉农</span></li>
+												<li><span>身高：</span><span>170cm</span></li>
+												<li><span>体重：</span><span>60kg</span></li>
+												<li><span>住址：</span><span>长春经开</span></li>
+												<li><span>学历：</span><span>大专</span></li>
+												<li><span>专业：</span><span>机动车保险</span></li>
+												<li><span>院校：</span><span>吉林交通职业技术学院</span></li>
+												<li><span>电话：</span><span>13159759579</span></li>
+												<li><span>Email：</span><span>249483010</span></li>
+											</ul>
+										</div>
+									</div>
+									<!-- 求职意向 -->
+									<div class="col-md-12 cols-sm-12 col-xs-12 job-intentions">
+										<ul class="ml-5rem">
+											<li class="col-md-3 col-sm-3 col-xs-3">前端开发</li>
+											<li class="col-md-3 col-sm-3 col-xs-3">全职</li>
+											<li class="col-md-3 col-sm-3 col-xs-3">长春</li>
+											<li class="col-md-3 col-sm-3 col-xs-3">三年</li>
+										</ul>
+									</div>
+									<!-- 个人爱好 -->
+									<div class="col-md-12 cols-sm-12 col-xs-12 hobby">
+										<h4>个人爱好</h4>
+										<h2>书法、阅读、游戏</h2>
+										<h4>个人地址：url：<a href="https://ing907525.github.io/BootStrap/">https://ing907525.github.io/BootStrap</a></h4>
+									</div>
+								</div>
+								<!-- <div id="print"></div> -->
+							</div>
+							<!-- 学校 & 专业 -->
+							<div class="school-professional-detail height-100" style="display: none;">
+								<h4 class="title position-abs color-fff">学校 & 专业</h4>
+								<div class="map height-100 flex-middle position-rel">
+									<img src="src/img/bg/map-bg.png" class="width-100">
+									<div class="col-md-6 col-sm-6 col-xs-5 school-professional-detail color-5ef2e4 position-abs">
+										<h4 class="title- align-center animated">吉林交通职业技术学院</h4>
+										<p class="detail- animated">
+											吉林交通职业技术学院是1998年3月经国家教育委员会批准的吉林省第一所独立设置的高等职业院校，是一所以交通类为主，兼设工程机械、管理、电子信息、经济、外语等专业相互支撑，协调发展的国家骨干高职院校。学院前身是由吉林省交通学校（始建于1958年）和吉林交通职工大学合并成立，占地面积22万平方米，建筑面积13.9万平方米。2010年被教育部、财政部确定为首批“国家示范性高等职业院校建设计划”骨干高职院校立项建设单位。2013年圆满通过国家骨干校建设验收。
+										</p>
+										<h4 class="title-1 align-center animated">机动车保险实务</h4>
+										<p class="detail-1 animated">
+											机动车保险实务专业培养德智体美全面发展的，高素质的，适应社会主义市场经济需要的，具有现代科学技术知识及较强实践能力与创新精神，在公估，保险，汽修行业从事机动车保险，机动车估价，车辆损坏鉴定，交通事故核赔，车辆维修技术服务的高技能人才。
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- 工作经历 -->
+							<div class="work-experience-detail height-100" style="display: none;">
+								<h4 class="title position-abs color-fff">工作经历</h4>
+								<div class="col-md-2 col-sm-2 col-xs-2 wed-line height-100">
+									<ul>
+										<li class="star star1"></li>
+										<li class="star star2"></li>
+										<li class="star star3"></li>
+										<li class="star star4"></li>
+										<li class="star star5"></li>
+									</ul>
+								</div>
+								<div class="col-md-10 col-sm-10 col-xs-10 wed-detail">
+									<ul>
+										<li>
+											<h4>吉林省溶创信息技术有限公司</h4>
+											<p>前端开发&nbsp;&nbsp;&nbsp;&nbsp;2018-03至2019-03&nbsp;&nbsp;&nbsp;&nbsp;长春</p>
+										</li>
+										<li>
+											<h4>长春北创科技责任有限公司</h4>
+											<p>前端开发&nbsp;&nbsp;&nbsp;&nbsp;2017-05至2017-10&nbsp;&nbsp;&nbsp;&nbsp;长春</p>
+										</li>
+										<li>
+											<h4>吉林省创通科技有限公司</h4>
+											<p>前端开发&nbsp;&nbsp;&nbsp;&nbsp;2016-05至2017-05&nbsp;&nbsp;&nbsp;&nbsp;长春</p>
+										</li>
+										<li>
+											<h4>北京龙本教育科技集团有限公司</h4>
+											<p>前端开发&nbsp;&nbsp;&nbsp;&nbsp;2015-03至2015-09&nbsp;&nbsp;&nbsp;&nbsp;北京</p>
+										</li>
+										<li>
+											<h4></h4>
+											<p></p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- 专业技能 -->
+							<div class="professional-skill-detail height-100" style="display: none;">
+								<h4 class="title position-abs color-fff">专业技能</h4>
+								<!-- UI设计 -->
+								<div class="col-md-12 col-sm-12 col-xs-12 height-100 ui-interface" style="display: none;">
+									<div class="col-md-4 col-sm-4 col-xs-4 psd-title position-rel pl-0">
+										<img src="src/img/bg/psd-bg.png" class="width-100">
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12 psd-main height-85" style="padding: 2%;padding-bottom: 0;">
+										<ul class="p-0 height-100">
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+										</ul>
+										<ul class="p-0 height-100">
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+										</ul>
+										<ul class="p-0 height-100">
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+											<li class="col-md-2 col-sm-2 col-xs-2"><img src="src/img/cases/UI/ui.png"></li>
+										</ul>
+									</div>
+								</div>
+								<!-- HTML &CSS -->
+								<div class="col-md-12 col-sm-12 col-xs-12 height-100 html-css" style="display: none;">
+									<div class="col-md-4 col-sm-4 col-xs-4 html-css-title position-rel pl-0">
+										<img src="src/img/bg/psd-bg.png" class="width-100">
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12 html-css-main height-85 flex-middle-center" style="padding: 2%;">
+										<img src="src/img/bg/HTML-CSS-bg.png" class="width-70">
+									</div>
+								</div>
+								<!-- JQUERY & JS -->
+								<div class="col-md-12 col-sm-12 col-xs-12 height-100 jquery-js">
+									<div class="col-md-4 col-sm-4 col-xs-4 jquery-js-title position-rel pl-0">
+										<img src="src/img/bg/psd-bg.png" class="width-100">
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12 jquery-js-main height-85 flex-middle-center">
+										<div>
+											<div class="cp-di">
+												<div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 component-package height-100 p-0">
+													<img src="src/img/bg/component-package-bg.png" class="width-100">
+													<div class="cp-text position-abs">
+														<p class="component-package-text-p"></p>
+														<span>插件封装</span>
+														<p class="color-fff">根据项目需求利用jQuery、JS封装组件</p>
+													</div>
+												</div>
+												<div class="col-md-4 col-sm-4 col-xs-4 data-interaction height-100 p-0">
+													<img src="src/img/bg/data-interaction-bg.png" class="width-100">
+													<div class="cp-text position-abs">
+														<p class="component-package-text-p"></p>
+														<span>数据交互</span>
+														<p class="color-fff">根据后台接口利用aJax进行数据交互</p>
+													</div>
+												</div>
+												<div class="clear"></div>
+											</div>
+											<div class="cp-di">
+												<div class="col-md-3 col-sm-4 col-xs-4 js-ability height-100 p-0">
+													<div class="position-abs col-md-12 col-sm-12 col-xs-12">
+														<a href="" target="_blank" class="js-ability-text js-ability-text-1">熟悉JS原型及原型链</a>
+														<a href="" target="_blank" class="js-ability-text js-ability-text-2">了解JS模块化</a>
+														<a href="" target="_blank" class="js-ability-text js-ability-text-3">原生JS操作DOM结构</a>
+														<a href="" target="_blank" class="js-ability-text js-ability-text-4">JS操作数组及JSON对象</a>
+													</div>
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-4 height-100 align-center" style="padding: 1.5rem;">
+													<img src="src/img/bg/jquery-js-m.png" class="width-80">
+													<div class="jquery-js-text position-abs">
+														<p class="jquery-js-text-p color-fff">应用于客户端及服务端脚本语言</p>
+														<h4 class="jquery-js-text-h4">jQuery、JS</h4>
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-4 col-xs-4 jquery-ability height-100 p-0">
+													<div class="position-abs col-md-12 col-sm-12 col-xs-12">
+														<div class="js-ability-text js-ability-text-1">运用aJax进行数据交互</div>
+														<a href="" target="_blank" class="js-ability-text js-ability-text-2">jQuery插件封装</a>
+														<a href="" target="_blank" class="js-ability-text js-ability-text-3">jQuery动画运用</a>
+														<a href="" target="_blank" class="js-ability-text js-ability-text-4">jQuery对DOM操作</a>
+													</div>
+												</div>
+												<div class="clear"></div>
+											</div>
+											<div class="cp-di">
+												<div class="col-md-12 col-sm-12 col-xs-12 component-package height-100 p-0 align-center" style="padding-top: 1rem;">
+													<img src="src/img/bg/jquery-js-module-bg.png" class="width-90">
+												</div>
+												<div class="clear"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 项目经验 -->
+							<div class="project-experience-detail height-100" style="display: none;">
+								<h4 class="title position-abs color-fff">项目经验</h4>
+								<div class="col-md-12 col-sm-12 col-xs-12 ped-left ped-bg height-100">
+									<div class="col-md-9 col-sm-9 col-xs-9 align-center project-title">
+										<h4>CASE1：门户官网</h4>
+										<p class="title-line"></p>
+										<p><a href="https://ccbeichuang.com/">https://ccbeichuang.com</a></p>
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4 align-center project-img">
+										<img src="src/img/cases/case1/case-1.png" class="width-100">
+									</div>
+									<div class="col-md-9 col-sm-9 col-xs-9 align-center project-explain">
+										<font class="col-md-9 col-md-offset-2 project-explain-text">
+											公司数据展示，应用百度地图实现位置定位，应用CSS+JS动画实现页面动画交互，数据存储在js中。
+										</font>
+										<img src="src/img/bg/project-explain-bg.png" class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 5px;">
+									</div>
+									<div class="col-md-9 col-sm-9 col-xs-9 align-center project-module">
+										<div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+											<ul class="list-inline">
+												<li class="col-md-4 col-sm-4 col-xs-4"><img src='src/img/cases/case1/project-module-1.png' class="width-100 border-5ef2e4 cursor-pointer"></li>
+												<li class="col-md-4 col-sm-4 col-xs-4"><img src='src/img/cases/case1/project-module-2.png' class="width-100 border-op-0 cursor-pointer"></li>
+												<li class="col-md-4 col-sm-4 col-xs-4"><img src='src/img/cases/case1/project-module-3.png' class="width-100 border-op-0 cursor-pointer"></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 col-xs-3 align-left project-module-title height-70">
+										<div class="col-md-10 col-sm-10 col-xs-10 pull-right height-100">
+											<div class="flex-middle-center">
+												<ul class="list-group">
+												    <li class="list-group-item">
+														<img src="src/img/cases/case1/case-1.png" class="width-100 border-5ef2e4 cursor-pointer">
+														<p><a href="" target="_blank">CASE1：北创官网</a></p>
+												    </li>
+												    <li class="list-group-item">
+														<img src="src/img/cases/case2/case-2.png" class="width-100 cursor-pointer">
+														<p><a href="" target="_blank">CASE2：城市大数据可视化分析决策平台</a></p>
+												    </li>
+												    <li class="list-group-item">
+														<img src="src/img/cases/case3/case-3.png" class="width-100 cursor-pointer">
+														<p><a href="" target="_blank">CASE3：中国一汽在线</a></p>
+												    </li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 附属信息 -->
+							<div class="satellite-information-detail height-100" style="display: none;">
+								<h4 class="title position-abs color-fff">附属信息</h4>
+								<div class="">
+									<div class="col-md-6 col-sm-6 col-xs-6 compendium" style="display: none;">
+										<img src="src/img/bg/Eric.png" class="width-100">
+										<h4 class="website position-abs">常关注的网站</h4>
+										<h2 class="blog position-abs"></h2>
+										<h5 class="amateur position-abs">业余作品</h5>
+										<h3 class="books position-abs">阅读过的书籍</h3>
+									</div>
+									<!-- 常关注的网站 -->
+									<div class="col-md-2 col-sm-2 col-xs-2 compendium-items" style="display: none;">
+										<div class="compendium-item position-rel">
+											<a href="">
+												<img src="src/img/logo/csdn-logo.png" alt="CSDN" class="csdn-logo width-100 position-abs">
+											</a>
+											<a href="">
+												<img src="src/img/logo/setfault-logo.png" alt="Setfault" class="setfault-logo width-100 position-abs">
+											</a>
+											<a href="">
+												<img src="src/img/logo/git-logo.png" alt="GIT" class="git-logo width-100">
+											</a>
+											<a href="">
+												<img src="src/img/logo/jianshu-logo.png" alt="简书" class="jianshu-logo width-100 position-abs">
+											</a>
+											<a href="">
+												<img src="src/img/logo/zhihu-logo.png" alt="知乎" class="zhihu-logo width-100 position-abs">
+											</a>
+										</div>
+									</div>
+									<!-- 个人博客 -->
+									<div class="col-md-12 col-sm-12 col-xs-12 compendium-items" style="display: none;">
+										<div class="compendium-item position-rel">
+											<table>
+												<tr>
+													<td>作者</td>
+													<td>Eric Su</td>
+												</tr>
+												<tr>
+													<td>创作时间</td>
+													<td>2017-11</td>
+												</tr>
+												<tr>
+													<td>客户端语言</td>
+													<td>HTML、JS、jQuery、Vue等</td>
+												</tr>
+												<tr>
+													<td>服务端语言</td>
+													<td>Node</td>
+												</tr>
+												<tr>
+													<td>数据库</td>
+													<td>MySQL</td>
+												</tr>
+												<tr>
+													<td>运行环境</td>
+													<td>windows、IOS</td>
+												</tr>
+												<tr>
+													<td>URL地址</td>
+													<td class="url-address"><a href="https://github.com/Ing907525">https://github.com/Ing907525</a></td>
+												</tr>
+												<tr>
+													<td>博客内容</td>
+													<td>主要收录个人学习心得，涵盖UI设计、前端开发等技术，面向广大IT从业人员及IT爱好者。免费在线问答，提供文件下载，个人作品展示等</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<!-- 业余作品 -->
+									<div class="col-md-10 col-sm-10 col-xs-10 compendium-items" style="display: none;">
+										<div class="compendium-item opus position-rel">
+											<img src="src/img/bg/opus-bg.png" class="width-100">
+											<p class="opus-1 position-abs"><a href="https://ing907525.github.io/BootStrap">https://ing907525.github.io/BootStrap</a></p>
+											<p class="opus-2 position-abs"><a href="https://ing907525.github.io/BootStrap">https://ing907525.github.io/BootStrap</a></p>
+											<p class="opus-3 position-abs"><a href="https://ing907525.github.io/BootStrap">https://ing907525.github.io/BootStrap</a></p>
+										</div>
+									</div>
+									<!-- 阅读过的书籍 -->
+									<div class="col-md-12 col-sm-12 col-xs-12 compendium-items books-item" style="display: block;">
+										<div class="compendium-item position-rel">
+											<div class="content">
+												<figure class="org-chart cf">
+													<ul class="administration">
+														<li>
+															<ul class="director">
+																<li>
+																	<a href="#"><span class="font-2-5">Eric</span></a>
+																	<ul class="subdirector">
+																		<li><a href="#"><span>VUE</span></a></li>
+																	</ul>
+																	<ul class="departments cf">
+																		<li><a href="#"><span>JavaScript</span></a></li>
+																		<li class="department dep-a">
+																			<a href="#"><span>你不知道的JavaScript</span></a>
+																			<ul class="sections">
+																				<li class="section"><a href="#"><span>JavaScript进阶</span></a></li>
+																				<li class="section"><a href="#"><span>JavaScript语言精粹</span></a></li>
+																			</ul>
+																		</li>
+																		<li class="department dep-b">
+																			<a href="#"><span>jQuery入门</span></a>
+																			<ul class="sections">
+																				<li class="section"><a href="#"><span>jQuery源码解析</span></a></li>
+																				<li class="section"><a href="#"><span>jQuery动画</span></a></li>
+																			</ul>
+																		</li>
+																		<li class="department dep-c">
+																			<a href="#"><span>Node.js</span></a>
+																			<ul class="sections">
+																				<li class="section"><a href="#"><span>Node.js入门</span></a></li>
+																				<li class="section"><a href="#"><span>Node.js实战</span></a></li>
+																			</ul>
+																		</li>
+																		<li class="department dep-e">
+																			<a href="#"><span>HTML、CSS实战</span></a>
+																			<ul class="sections">
+																				<li class="section"><a href="#"><span>HTML语言精粹</span></a></li>
+																				<li class="section"><a href="#"><span>CSS语言精粹</span></a></li>
+																			</ul>
+																		</li>
+																		<li class="department dep-f">
+																			<a href="#"><span>·····</span></a>
+																		</li>
+										                          	</ul>
+										                      	</li>
+										                  	</ul>
+										              	</li>
+										          	</ul>
+										      	</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 全部显示 -->
+			<div id="popup-all" class="height-100 animated" style="display: none;">
+				<div class="container-fluid">
+					<nav class="navbar navbar-default" role="navigation"> 
+					    <div class="navbar-header col-md-2 col-sm-2">
+					        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+					            <span class="sr-only">展开导航</span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					        </button>
+					        <a class="navbar-brand" href="#">Eric的主页</a>
+					    </div>
+					    <div class="collapse navbar-collapse col-md-10 col-sm-10 col-xs-12 pl-0" id="menu">
+					        <ul class="col-md-10 col-sm-10 col-xs-10 nav navbar-nav">
+					            <li class="col-md-2 col-sm-2 col-xs-12 active"><a href="#home" data-toggle="tab">基本信息</a></li>
+								<li class="col-md-2 col-sm-2 col-xs-12"><a href="#school-major" data-toggle="tab">学校专业</a></li>
+								<li class="col-md-2 col-sm-2 col-xs-12"><a href="#occupational-history" data-toggle="tab">工作经历</a></li>
+								<li class="col-md-2 col-sm-2 col-xs-12"><a href="#expertise" data-toggle="tab">专业技能</a></li>
+								<li class="col-md-2 col-sm-2 col-xs-12"><a href="#item-experience" data-toggle="tab">项目经验</a></li>
+								<li class="col-md-2 col-sm-2 col-xs-12"><a href="#subsidiary-information" data-toggle="tab">附属信息</a></li>
+								<div class="clear"></div>
+					        </ul>
+					    </div>
+					    <div class="weather-box">
+							<ul class="weather m-0">
+								<li>2018-01-18&nbsp;&nbsp;&nbsp;&nbsp;晴天</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="container-fluid height-70 position-rel">
+					<div id="myTabContent" class="col-md-12 col-sm-12 col-xs-12 tab-content height-100">
+						<div class="tab-pane fade in active height-100" id="home">
+							<div class="col-md-12 col-sm-12 col-xs-12 height-100 all-basic-information flex-middle-center">
+								<div id="print-content" class="col-md-10 col-sm-12 col-xs-12">
+									<div class="col-md-2 col-sm-2 col-xs-2 height-30">
+										<div class="header-bg height-100">
+											<span>
+												<img src="src/img/header-img/header-img.png" class="height-100">
+											</span>
+										</div>
+									</div>
+									<div class="col-md-10 col-sm-10 col-xs-10">
+										<div id="basic-top-right" class="basic-top-right color-5ef2e4">
+											<ul>
+												<li><span>姓名：</span><span>苏锋</span></li>
+												<li><span>性别：</span><span>男</span></li>
+												<li><span>年龄：</span><span>30</span></li>
+												<li><span>民族：</span><span>汉</span></li>
+												<li><span>籍贯：</span><span>吉农</span></li>
+												<li><span>身高：</span><span>170cm</span></li>
+												<li><span>体重：</span><span>60kg</span></li>
+												<li><span>住址：</span><span>长春经开</span></li>
+												<li><span>学历：</span><span>大专</span></li>
+												<li><span>专业：</span><span>机动车保险</span></li>
+												<li><span>院校：</span><span>吉林交通职业技术学院</span></li>
+												<li><span>电话：</span><span>13159759579</span></li>
+												<li><span>Email：</span><span>249483010</span></li>
+											</ul>
+										</div>
+									</div>
+									<!-- 求职意向 -->
+									<div class="col-md-12 cols-sm-12 col-xs-12 job-intentions">
+										<img src="src/img/bg/job-intentions.png" class="width-100 position-abs">
+										<ul class="ml-5rem">
+											<li class="col-md-3 col-sm-3 col-xs-3">前端开发</li>
+											<li class="col-md-3 col-sm-3 col-xs-3">全职</li>
+											<li class="col-md-3 col-sm-3 col-xs-3">长春</li>
+											<li class="col-md-3 col-sm-3 col-xs-3">三年</li>
+										</ul>
+									</div>
+									<!-- 个人爱好 -->
+									<div class="col-md-12 cols-sm-12 col-xs-12 hobby">
+										<h4>个人爱好</h4>
+										<h2>书法、阅读、游戏</h2>
+										<h4>个人地址：url：<a href="https://github.com/Ing907525">https://github.com/Ing907525</a></h4>
+									</div>
+								</div>
+								<div id="print" class="col-md-10 col-sm-12 col-xs-12"></div>
+							</div>
+						</div>
+						<div class="tab-pane fade height-100" id="school-major">
+							<div class="col-md-12 col-sm-12 col-xs-12 height-100 all-school-professional flex-middle-center">
+								<div class="col-md-8 col-sm-8 col-xs-8 map position-rel">
+									<img src="src/img/bg/map-bg.png" class="width-100">
+									<div class="col-md-6 col-sm-6 col-xs-5 school-professional-detail color-5ef2e4 position-abs">
+										<h4 class="title- align-center animated">吉林交通职业技术学院</h4>
+										<p class="detail- animated">
+											吉林交通职业技术学院（Jilin Vocational and Technical Institute Communications）位于吉林省长春市，是公办普通高等学校，为“国家示范性高等职业院校建设计划”骨干高职院校、第二批国家现代学徒制试点单位、吉林省首批示范性高等职业技术学院。
+										</p>
+										<h4 class="title-1 align-center animated">机动车保险实务</h4>
+										<p class="detail-1 animated">
+											机动车保险实务专业培养德智体美全面发展的，高素质的，适应社会主义市场经济需要的，具有现代科学技术知识及较强实践能力与创新精神，在公估，保险，汽修行业从事机动车保险，机动车估价，车辆损坏鉴定，交通事故核赔，车辆维修技术服务的高技能人才。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade height-100" id="occupational-history">
+							<div class="col-md-12 col-sm-12 col-xs-12 all-occupational-history flex-middle-center">
+								<div class="col-md-8 col-sm-8 col-xs-8 all-wed height-80">
+									<div class="col-md-2 col-sm-2 col-xs-2 wed-line height-100">
+										<ul>
+											<li class="star star1"></li>
+											<li class="star star2"></li>
+											<li class="star star3"></li>
+											<li class="star star4"></li>
+											<li class="star star5"></li>
+										</ul>
+									</div>
+									<div class="col-md-10 col-sm-10 col-xs-10 wed-detail height-100">
+										<ul class="web-detail-text height-100 width-100">
+											<li class="position-abs" style="top: 12%">
+												<h4>吉林省溶创信息技术有限公司</h4>
+												<p>前端开发&nbsp;&nbsp;&nbsp;&nbsp;2018-03至2019-03&nbsp;&nbsp;&nbsp;&nbsp;长春</p>
+											</li>
+											<li class="position-abs" style="top: 32%">
+												<h4>长春北创科技责任有限公司</h4>
+												<p>前端开发&nbsp;&nbsp;&nbsp;&nbsp;2017-05至2017-10&nbsp;&nbsp;&nbsp;&nbsp;长春</p>
+											</li>
+											<li class="position-abs" style="top: 52%">
+												<h4>吉林省创通科技有限公司</h4>
+												<p>前端开发&nbsp;&nbsp;&nbsp;&nbsp;2016-05至2017-05&nbsp;&nbsp;&nbsp;&nbsp;长春</p>
+											</li>
+											<li class="position-abs" style="top: 72%;">
+												<h4>北京龙本教育科技集团有限公司</h4>
+												<p>前端开发&nbsp;&nbsp;&nbsp;&nbsp;2015-03至2015-09&nbsp;&nbsp;&nbsp;&nbsp;北京</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade height-100" id="expertise">
+							<div class="col-md-12 col-sm-12 col-xs-12 height-100 jquery-js flex-middle-center">
+								<div class="col-md-2 col-sm-2 col-xs-2 color-fff">
+									UI设计
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+											<span class="sr-only">45% Complete</span>
+										</div>
+									</div>
+									jQuery
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+											<span class="sr-only">60% Complete (success)</span>
+										</div>
+									</div>
+									 JavaScript
+									<div class="progress">
+										<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+											<span class="sr-only">70% Complete</span>
+										</div>
+									</div>
+									Bootstrap
+									<div class="progress">
+										<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+											<span class="sr-only">65% Complete (warning)</span>
+										</div>
+									</div>
+									VUE
+									<div class="progress">
+										<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+											<span class="sr-only">20% Complete (danger)</span>
+										</div>
+									</div>
+									HTML
+									<div class="progress">
+										<div class="progress-bar progress-bar-other progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+											<span class="sr-only">80% Complete (danger)</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 col-sm-8 col-xs-8">
+									<div class="cp-di">
+										<div class="col-md-4 col-sm-4 col-xs-4 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 component-package height-100 p-0">
+											<img src="src/img/bg/component-package-bg.png" class="width-100">
+											<div class="cp-text position-abs">
+												<p class="component-package-text-p"></p>
+												<span class="center">插件封装</span>
+												<p class="color-fff">根据项目需求利用jQuery、JS封装组件</p>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4 col-xs-4 data-interaction height-100 p-0">
+											<img src="src/img/bg/data-interaction-bg.png" class="width-100">
+											<div class="cp-text position-abs">
+												<p class="component-package-text-p"></p>
+												<span>数据交互</span>
+												<p class="color-fff">根据后台接口利用aJax进行数据交互</p>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<div class="cp-di">
+										<div class="col-md-3 col-sm-4 col-xs-4 js-ability height-100 p-0">
+											<!-- <img src="src/img/bg/js-ability-bg.png" class="width-100"> -->
+											<div class="position-abs col-md-12 col-sm-12 col-xs-12">
+												<a href="" target="_blank" class="js-ability-text js-ability-text-1">熟悉JS原型及原型链</a>
+												<a href="" target="_blank" class="js-ability-text js-ability-text-2">了解JS模块化</a>
+												<a href="" target="_blank" class="js-ability-text js-ability-text-3">原生JS操作DOM结构</a>
+												<a href="" target="_blank" class="js-ability-text js-ability-text-4">JS操作数组及JSON对象</a>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-4 height-100 align-center" style="padding: 1.5rem;">
+											<img src="src/img/bg/jquery-js-m.png" class="width-80">
+											<div class="jquery-js-text position-abs">
+												<p class="jquery-js-text-p color-fff">应用于客户端及服务端脚本语言</p>
+												<h4 class="jquery-js-text-h4">jQuery、JS</h4>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-4 jquery-ability height-100 p-0">
+											<div class="position-abs col-md-12 col-sm-12 col-xs-12">
+												<a href="" target="_blank" class="js-ability-text js-ability-text-1">运用aJax进行数据交互</a>
+												<a href="" target="_blank" class="js-ability-text js-ability-text-2">jQuery插件封装</a>
+												<a href="" target="_blank" class="js-ability-text js-ability-text-3">jQuery动画运用</a>
+												<a href="" target="_blank" class="js-ability-text js-ability-text-4">jQuery对DOM操作</a>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<div class="cp-di">
+										<div class="col-md-12 col-sm-12 col-xs-12 component-package height-100 p-0 align-center" style="padding-top: 1rem;">
+											<ul class="jquery-js-module-text color-fff list-inline width-100">
+												<li>
+													<a href="">
+														<img src="src/img/sprite/111.png">
+														<div>
+															<p>No.1</p>
+															<font>树形菜单</font>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<img src="src/img/sprite/111.png">
+														<div>
+															<p>No.2</p>
+															<font>aJax组件</font>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<img src="src/img/sprite/111.png">
+														<div>
+															<p>No.3</p>
+															<font>下拉菜单</font>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<img src="src/img/sprite/111.png">
+														<div>
+															<p>No.4</p>
+															<font>弹出层</font>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="banner.html" target="_blank">
+														<img src="src/img/sprite/111.png">
+														<div>
+															<p>No.5</p>
+															<font>轮播图</font>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+								<div class="col-md-2 col-sm-2 col-xs-2 color-fff">
+									CSS
+									<div class="progress">
+										<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+									aJax
+									<div class="progress">
+										<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+											<span class="sr-only">60% Complete (success)</span>
+										</div>
+									</div>
+									EasyUi
+									<div class="progress">
+										<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+											<span class="sr-only">30% Complete</span>
+										</div>
+									</div>
+									MySQL
+									<div class="progress">
+										<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+											<span class="sr-only">20% Complete (warning)</span>
+										</div>
+									</div>
+									Node.js
+									<div class="progress">
+										<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+											<span class="sr-only">25% Complete (danger)</span>
+										</div>
+									</div>
+									其他
+									<div class="progress">
+										<div class="progress-bar progress-bar-other progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+											<span class="sr-only">50% Complete (danger)</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade height-100" id="item-experience">
+							<div class="col-md-12 col-sm-12 col-xs-12 flex-middle-center">
+								<div class="col-md-8 col-sm-8 col-xs-8 ped-left ped-bg height-90 ">
+									<div class="col-md-12 col-sm-12 xol-xs-12 height-100 banner-container">
+										<div class="col-md-9 col-sm-9 col-xs-9 banner-list height-100">
+											<div class="col-md-12 col-sm-12 col-xs-12 banner-item height-100 active">
+												<div class="col-md-12 col-sm-12 col-xs-12 align-center project-title">
+													<h4>CASE1：官网门户</h4>
+													<p class="title-line"></p>
+													<p><a href="https://ccbeichuang.com/">https://ccbeichuang.com</a></p>
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 align-center project-img">
+													<img src="src/img/cases/case1/case-1.png" class="width-100">
+												</div>
+												<div class="col-md-12 col-sm-12 col-xs-12 align-center project-explain">
+													<font class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-9 col-xs-offset-2 project-explain-text">
+														公司数据展示，应用百度地图实现位置定位，应用CSS+JS动画实现页面动画交互，数据存储在js中。
+													</font>
+													<img src="src/img/bg/project-explain-bg.png" class="col-md-12 col-sm-12 col-xs-12">
+												</div>
+												<div class="col-md-12 col-sm-9 col-xs-9 align-center project-module">
+													<div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+														<ul class="list-inline">
+															<li class="col-md-4 col-sm-4 col-xs-4"><img src='src/img/cases/case1/project-module-1.png' class="width-100 border-5ef2e4 cursor-pointer"></li>
+															<li class="col-md-4 col-sm-4 col-xs-4"><img src='src/img/cases/case1/project-module-2.png' class="width-100 border-op-0 cursor-pointer"></li>
+															<li class="col-md-4 col-sm-4 col-xs-4"><img src='src/img/cases/case1/project-module-3.png' class="width-100 border-op-0 cursor-pointer"></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-12 col-xs-12 banner-item height-100">
+												<div class="col-md-12 col-sm-12 col-xs-12 align-center project-title">
+													<h4>CASE2：城市大数据可视化分析决策平台</h4>
+													<p class="title-line"></p>
+													<p><a href="https://ccbeichuang.com/">https://ccbeichuang.com</a></p>
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 align-center project-img">
+													<img src="src/img/cases/case2/case-2.png" class="width-100">
+												</div>
+												<div class="col-md-12 col-sm-12 col-xs-12 align-center project-explain">
+													<font class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-9 col-xs-offset-2 project-explain-text">
+														城市公安、社区、返乡创业等系统数据收集、分析等。
+													</font>
+													<img src="src/img/bg/project-explain-bg.png" class="col-md-12 col-sm-12 col-xs-12">
+												</div>
+												<div class="col-md-12 col-sm-9 col-xs-9 align-center project-module">
+													<div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+														<ul class="list-inline">
+															<li class="col-md-4 col-sm-4 col-xs-4"><img src='src/img/cases/case2/project-module-1.png' class="width-100 border-5ef2e4 cursor-pointer"></li>
+															<li class="col-md-4 col-sm-4 col-xs-4"><img src='src/img/cases/case2/project-module-2.png' class="width-100 border-op-0 cursor-pointer"></li>
+															<li class="col-md-4 col-sm-4 col-xs-4"><img src='src/img/cases/case2/project-module-3.png' class="width-100 border-op-0 cursor-pointer"></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-12 col-xs-12 banner-item height-100">
+												<div class="col-md-12 col-sm-12 col-xs-12 align-center project-title">
+													<h4>CASE3：返乡大数据平台</h4>
+													<p class="title-line"></p>
+													<p><a href="https://ccbeichuang.com/">https://ccbeichuang.com</a></p>
+												</div>
+												<div class="col-md-6 col-sm-6 col-xs-6 align-center project-img">
+													<img src="src/img/cases/case3/case-3.png" class="width-100">
+												</div>
+												<div class="col-md-12 col-sm-12 col-xs-12 align-center project-explain">
+													<font class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-9 col-xs-offset-2 project-explain-text">
+														公司数据展示，应用百度地图实现位置定位，应用CSS+JS动画实现页面动画交互，数据存储在js中。
+													</font>
+													<img src="src/img/bg/project-explain-bg.png" class="col-md-12 col-sm-12 col-xs-12">
+												</div>
+												<div class="col-md-12 col-sm-9 col-xs-9 align-center project-module">
+													<div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+														<ul class="list-inline">
+															<li class="col-md-4 col-sm-4 col-xs-4"><img src='src/img/cases/case3/project-module-1.png' class="width-100 border-5ef2e4 cursor-pointer"></li>
+															<li class="col-md-4 col-sm-4 col-xs-4"><img src='src/img/cases/case3/project-module-2.png' class="width-100 border-op-0 cursor-pointer"></li>
+															<li class="col-md-4 col-sm-4 col-xs-4"><img src='src/img/cases/case3/project-module-3.png' class="width-100 border-op-0 cursor-pointer"></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-12 col-sm-12 col-xs-12 banner-item height-100 p-0">
+												<table>
+													<tr>
+														<th>项目名称</th>
+														<th>在线地址</th>
+														<th>备注</th>
+													</tr>
+													<tr>
+														<td>北创官网</td>
+														<td><a href="https://www.ccbeichuang.com/" target="_blank">https://www.ccbeichuang.com/</a></td>
+														<td><a href=""></a></td>
+													</tr>
+													<tr>
+														<td>中国一汽网</td>
+														<td><a href="https://faw.com.cn/">https://faw.com.cn/</a></td>
+														<td><a href=""></a></td>
+													</tr>
+													<tr>
+														<td>中国一汽党建</td>
+														<td><a href="https://fawdj.faw.cn/">https://fawdj.faw.cn/</a></td>
+														<td><a href=""></a></td>
+													</tr>
+													<tr>
+														<td>一汽建厂65周年</td>
+														<td><a href="https://www.faw.com.cn/zt_fawcn/qzyqjc65zn/index.html">https://www.faw.com.cn/zt_fawcn/qzyqjc65zn/index.html</a></td>
+														<td><a href=""></a></td>
+													</tr>
+													<tr>
+														<td>中国一汽在线</td>
+														<td><a href="">-</a></td>
+														<td><a href=""></a></td>
+													</tr>
+													<tr>
+														<td colspan="3">因其他项目无访问地址或企业内网访问地址，未全部列出。</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-3 col-xs-3 height-100 project-module-title">
+											<div class="col-md-10 col-sm-10 col-xs-10 pull-right flex-middle-center">
+												<ul class="list-group banner-title">
+												    <li class="list-group-item">
+														<img src="src/img/cases/case1/case-1.png" class="width-100 border-5ef2e4 cursor-pointer">
+														<p><a href="" target="_blank">CASE1：门户官网</a></p>
+												    </li>
+												    <li class="list-group-item">
+														<img src="src/img/cases/case2/case-2.png" class="width-100 cursor-pointer">
+														<p><a href="" target="_blank">CASE2：城市大数据可视化分析决策平台</a></p>
+												    </li>
+												    <li class="list-group-item">
+														<img src="src/img/cases/case3/case-3.png" class="width-100 cursor-pointer">
+														<p><a href="" target="_blank">CASE3：一汽在线</a></p>
+												    </li>
+												    <li class="banner-title-more"><font><a href="" target="_blank">·····</a></font></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade height-100" id="subsidiary-information">
+							<div class="flex-middle-center">
+								<div class="col-md-6 col-sm-6 col-xs-6 compendium color-5ef2e4" style="display: block;">
+									<img src="src/img/bg/Eric.png" class="width-100">
+									<h4 class="website position-abs">常关注的网站</h4>
+									<h2 class="blog position-abs"><a href="src/blog/index.html" target="_blank">个人博客</a></h2>
+									<h5 class="amateur position-abs">业余作品</h5>
+									<h3 class="books position-abs">阅读过的书籍</h3>
+								</div>
+								<!-- 常关注的网站 -->
+								<div class="col-md-2 col-sm-2 col-xs-2 compendium-items" style="display: none;">
+									<div class="compendium-item position-rel">
+										<a href="">
+											<img src="src/img/logo/csdn-logo.png" alt="CSDN" class="csdn-logo width-100 position-abs">
+										</a>
+										<a href="">
+											<img src="src/img/logo/setfault-logo.png" alt="Setfault" class="setfault-logo width-100 position-abs">
+										</a>
+										<a href="">
+											<img src="src/img/logo/git-logo.png" alt="GIT" class="git-logo width-100">
+										</a>
+										<a href="">
+											<img src="src/img/logo/jianshu-logo.png" alt="简书" class="jianshu-logo width-100 position-abs">
+										</a>
+										<a href="">
+											<img src="src/img/logo/zhihu-logo.png" alt="知乎" class="zhihu-logo width-100 position-abs">
+										</a>
+									</div>
+								</div>
+								<!-- 个人博客 -->
+								<div class="col-md-12 col-sm-12 col-xs-12 compendium-items" style="display: none;">
+									<div class="compendium-item position-rel">
+										<table>
+											<tr>
+												<td>作者</td>
+												<td>Eric Su</td>
+											</tr>
+											<tr>
+												<td>创作时间</td>
+												<td>2017-11</td>
+											</tr>
+											<tr>
+												<td>客户端语言</td>
+												<td>HTML、JS、jQuery、Vue等</td>
+											</tr>
+											<tr>
+												<td>服务端语言</td>
+												<td>Node</td>
+											</tr>
+											<tr>
+												<td>数据库</td>
+												<td>MySQL</td>
+											</tr>
+											<tr>
+												<td>运行环境</td>
+												<td>windows、IOS</td>
+											</tr>
+											<tr>
+												<td>URL地址</td>
+												<td class="url-address"><a href="https://ing907525.github.io/BootStrap">https://ing907525.github.io/BootStrap/</a></td>
+											</tr>
+											<tr>
+												<td>博客内容</td>
+												<td>主要收录个人学习心得，涵盖UI设计、前端开发等技术，面向广大IT从业人员及IT爱好者。免费在线问答，提供文件下载，个人作品展示等</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<!-- 业余作品 -->
+								<div class="col-md-10 col-sm-10 col-xs-10 compendium-items" style="display: none;">
+									<div class="compendium-item opus position-rel">
+										<img src="src/img/bg/opus-bg.png" class="width-100">
+										<p class="opus-1 position-abs"><a href="https://ing907525.github.io/BootStrap">https://ing907525.github.io/BootStrap</a></p>
+										<p class="opus-2 position-abs"><a href="https://ing907525.github.io/BootStrap">https://ing907525.github.io/BootStrap</a></p>
+										<p class="opus-3 position-abs"><a href="https://ing907525.github.io/BootStrap">https://ing907525.github.io/BootStrap</a></p>
+									</div>
+								</div>
+								<!-- 阅读过的书籍 -->
+								<div class="col-md-12 col-sm-12 col-xs-12 compendium-items books-item" style="display: none;">
+									<div class="compendium-item position-rel">
+										<div class="content">
+											<figure class="org-chart cf">
+												<ul class="administration">
+													<li>
+														<ul class="director">
+															<li>
+																<a href="#"><span class="font-2-5">Eric</span></a>
+																<ul class="subdirector">
+																	<li><a href="#"><span>VUE</span></a></li>
+																</ul>
+																<ul class="departments cf">
+																	<li><a href="#"><span>JavaScript</span></a></li>
+																	<li class="department dep-a">
+																		<a href="#"><span>你不知道的JavaScript</span></a>
+																		<ul class="sections">
+																			<li class="section"><a href="#"><span>JavaScript进阶</span></a></li>
+																			<li class="section"><a href="#"><span>JavaScript语言精粹</span></a></li>
+																		</ul>
+																	</li>
+																	<li class="department dep-b">
+																		<a href="#"><span>jQuery入门</span></a>
+																		<ul class="sections">
+																			<li class="section"><a href="#"><span>jQuery源码解析</span></a></li>
+																			<li class="section"><a href="#"><span>jQuery动画</span></a></li>
+																		</ul>
+																	</li>
+																	<li class="department dep-c">
+																		<a href="#"><span>Node.js</span></a>
+																		<ul class="sections">
+																			<li class="section"><a href="#"><span>Node.js入门</span></a></li>
+																			<li class="section"><a href="#"><span>Node.js实战</span></a></li>
+																		</ul>
+																	</li>
+																	<li class="department dep-e">
+																		<a href="#"><span>HTML、CSS实战</span></a>
+																		<ul class="sections">
+																			<li class="section"><a href="#"><span>HTML语言精粹</span></a></li>
+																			<li class="section"><a href="#"><span>CSS语言精粹</span></a></li>
+																		</ul>
+																	</li>
+																	<li class="department dep-f">
+																		<a href="#"><span>·····</span></a>
+																	</li>
+									                          	</ul>
+									                      	</li>
+									                  	</ul>
+									              	</li>
+									          	</ul>
+									      	</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="height: calc(30% - 60px);">
+					<p style="background:#01a4f3;height: 1px;margin: 0 auto;width: 100%;position: absolute;"></p>
+					<div class="container-fluid height-100">
+						<footer class="footer height-100">
+							<div class="example flex-middle-center">
+								<ul class="position-rel col-md-12 col-sm-12 col-xs-12">
+									<li>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">个人博客1</a>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">https://ing907525.github.io/BootStrap</a>
+									</li>
+									<li>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">个人项目2</a>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">https://ing907525.github.io/BootStrap</a>
+									</li>
+									<li>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">个人项目3</a>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">https://ing907525.github.io/BootStrap</a>
+									</li>
+									<li>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">个人博客1</a>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">https://ing907525.github.io/BootStrap</a>
+									</li>
+									<li>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">个人项目2</a>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">https://ing907525.github.io/BootStrap</a>
+									</li>
+									<li>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">个人项目3</a>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">https://ing907525.github.io/BootStrap</a>
+									</li>
+									<li>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">个人博客1</a>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">https://ing907525.github.io/BootStrap</a>
+									</li>
+									<li>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">个人项目2</a>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">https://ing907525.github.io/BootStrap</a>
+									</li>
+									<li>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">个人项目3</a>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">https://ing907525.github.io/BootStrap</a>
+									</li>
+									<li>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">个人项目3</a>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">https://ing907525.github.io/BootStrap</a>
+									</li>
+									<li>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">个人项目3</a>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">https://ing907525.github.io/BootStrap</a>
+									</li>
+									<li>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">个人项目3</a>
+										<a href="https://ing907525.github.io/BootStrap" class="display-inline-block" target="_blank">https://ing907525.github.io/BootStrap</a>
+									</li>
+									<div class="clear"></div>
+								</ul>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+			<!-- 第一次弹出 -->
+			<div class="tips">
+				<img class="width-100" src="src/img/close-information-database.png">
+				<h2 class="color-00b7ee text-indent-50 open-title"></h2>
+				<h3 class="color-00b7ee text-indent-50 open-tips"></h3>
+				<div id="progressbar"></div>
+			</div>
+		</div>
+	</div>
+	<div class="box"></div>
+	<audio id="myaudio" src="" controls="controls"  hidden="true" preload='auto'></audio>
+	<script src="src/js/less/less-3.5.0.min.js"  data-env="development"></script>
+	<script src="src/js/require/require-2.3.5.min.js" data-main="src/js/main"></script>
+	<script type="text/javascript">
+		function getWeather(location,type){
+			var url = "https://restapi.amap.com/v3/weather/weatherInfo";
+	 		var postData = {
+                key: "dfb9a576fbcb2c9a13a65ab736e47004",
+                city: location,
+                extensions: "all"
+            };
+			$.ajax({
+				url:url,
+				type:type,
+				data:postData,
+				success:function(status,data){
+					if(status.forecasts.length == 1){
+						var weatherData = status.forecasts[0].casts;
+						$(".weather li").html(status.forecasts[0].reporttime.substr(0,11) + weatherData[0].dayweather+" \ "+weatherData[0].nightweather);
+					}else{
+						alert('没有获取到天气信息')
+					}
+				},
+				error:function(status){
+				}
+			});
+		}
+		getWeather('长春',"post");
+	</script>
+</body>
+</html>

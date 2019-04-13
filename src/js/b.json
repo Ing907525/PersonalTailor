@@ -1,0 +1,15 @@
+{
+    "StyleSheet_B":{
+        "callout": {
+            "backgroundColor": "#ff00ff",
+            "borderRadius": 222,
+            "color": "#000000",
+            "content": "自定义标记点上方的气泡窗口",
+            "fontSize": 888,
+            "padding": 444,
+            "textAlign": "center"
+        },
+        "height": 300,
+        "iconPath": "../../assets/images/icon/pt1.png"
+    }
+}
