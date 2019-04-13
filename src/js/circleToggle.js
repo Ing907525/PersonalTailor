@@ -2,7 +2,7 @@
 * @Author: Alone Walker
 * @Date:   2018-07-21 19:44:31
 * @Last Modified by:   Alone Walker
-* @Last Modified time: 2019-04-13 23:32:45
+* @Last Modified time: 2019-04-14 01:26:59
 */
 ;(function (factory) {
    if (typeof define === "function" && (define.amd || define.cmd) && !jQuery) {
@@ -118,95 +118,102 @@
 			// 播放音乐
 			audioPlay();
 			// writeContent(true);
-			function allFlash() {
-				$('.slideLeft-BG').slideDown('slow',function () {
-					// 基本信息
-					$('.basic-information').addClass('flash');
-					$('.main-bg').addClass('show bounceIn')
-					setTimeout(function(){
-						$('.main-bg').addClass('bounceOut').removeClass('bounceIn')
-					},9000)
-					// 学校专业
-					$('.school-professional').addClass('flash flash-1');
-					setTimeout(function(){
-						// debugger;
-						$('.basic-information-detail').hide().next().show();
-						$('.main-bg').addClass('bounceIn').removeClass('bounceOut');
-						setTimeout(function () {
-							$('.title-').addClass('bounceOutDown').removeClass('bounceInDown').css('display','none')
-							$('.detail-').addClass('bounceOutUp').removeClass('bounceInUp').css('display','none')
-						},5000)
-						setTimeout(function(){
-							$('.title-1').addClass('bounceInDown').css('display','block')
-							$('.detail-1').addClass('bounceInUp').css('display','block')
-						},5000)
-					},10000)
-					setTimeout(function () {
-						$('.main-bg').addClass('bounceOut').removeClass('bounceIn')
-					},17500)
-					// 工作经历
-					$('.work-experience').addClass('flash flash-2');
-					setTimeout(function () {
-						$('.school-professional-detail').hide().next().show();
-						$('.main-bg').addClass('bounceIn').removeClass('bounceOut');
-					},18000)
-					setTimeout(function () {
-						$('.main-bg').addClass('bounceOut').removeClass('bounceIn')
-					},26500)
-					// 专业技能
-					$('.professional-skill').addClass('flash flash-3');
-					setTimeout(function () {
-						$('.work-experience-detail').hide().next().show();
-						$('.main-bg').addClass('bounceIn').removeClass('bounceOut');
-					},27000)
-					setTimeout(function () {
-						$('.main-bg').addClass('bounceOut').removeClass('bounceIn')
-					},35500)
-					// 项目经验
-					$('.project-experience').addClass('flash flash-4');
-					setTimeout(function () {
-						$('.professional-skill-detail').hide().next().show();
-						$('.main-bg').addClass('bounceIn').removeClass('bounceOut');
-					},36000)
-					setTimeout(function () {
-						$('.main-bg').addClass('bounceOut').removeClass('bounceIn')
-					},44500)
-					// 附属信息
-					$('.satellite-information').addClass('flash flash-5');
-					setTimeout(function () {
-						$('.project-experience-detail').hide().next().show(function () {
-							$(this).find('.flex-middle-center').removeClass('flex-middle-center');
-						});
-						$('.main-bg').addClass('bounceIn').removeClass('bounceOut');
-					},45000)
-					setTimeout(function () {
-						$('#popup').hide().siblings('#popup-all').animate({'display':'block'}, function () {
-                            $('.banner-title li').on('click', function(event) {
-                                event.preventDefault();
-                                var index = $(this).index();
-                                $('.banner-list .banner-item').eq(index).addClass('active').siblings().removeClass('active');
-                            });
-							$('.school-professional-detail').css('display', 'block');
-							$('.map').removeClass('col-md-8').addClass('col-md-10');
-							$('#print-content').typping();
-							setTimeout(function () {
-								$('.title-').css('display', 'block').removeClass('bounceOutDown').addClass('slideInLeft')
-								$('.detail-').css('display', 'block').removeClass('bounceOutUp').addClass('slideInLeft')
-							},5000)
-							setTimeout(function () {
-								$('.title-1').css('display', 'block').removeClass('bounceInDown').addClass('slideInRight')
-								$('.detail-1').css('display', 'block').removeClass('bounceInUp').addClass('slideInRight')
-							},5000)
-                            $('.expertise-navbar img').on('click', function(event) {
-                                event.preventDefault();
-                                var index = $(this).index();
-                                $('#popup-all .expertise-item').eq(index).slideDown().siblings().slideUp();
-                            });
-						});
-					},54)
-				})
-			}
-			allFlash();
+            function decompose(){
+                // 基本信息
+                $('.basic-information').addClass('flash');
+                $('.main-bg').addClass('show bounceIn')
+                setTimeout(function(){
+                    $('.main-bg').addClass('bounceOut').removeClass('bounceIn')
+                },9000)
+                // 学校专业
+                $('.school-professional').addClass('flash flash-1');
+                setTimeout(function(){
+                    // debugger;
+                    $('.basic-information-detail').hide().next().show();
+                    $('.main-bg').addClass('bounceIn').removeClass('bounceOut');
+                    setTimeout(function () {
+                        $('.title-').addClass('bounceOutDown').removeClass('bounceInDown').css('display','none')
+                        $('.detail-').addClass('bounceOutUp').removeClass('bounceInUp').css('display','none')
+                    },5000)
+                    setTimeout(function(){
+                        $('.title-1').addClass('bounceInDown').css('display','block')
+                        $('.detail-1').addClass('bounceInUp').css('display','block')
+                    },5000)
+                },10000)
+                setTimeout(function () {
+                    $('.main-bg').addClass('bounceOut').removeClass('bounceIn')
+                },17500)
+                // 工作经历
+                $('.work-experience').addClass('flash flash-2');
+                setTimeout(function () {
+                    $('.school-professional-detail').hide().next().show();
+                    $('.main-bg').addClass('bounceIn').removeClass('bounceOut');
+                },18000)
+                setTimeout(function () {
+                    $('.main-bg').addClass('bounceOut').removeClass('bounceIn')
+                },26500)
+                // 专业技能
+                $('.professional-skill').addClass('flash flash-3');
+                setTimeout(function () {
+                    $('.work-experience-detail').hide().next().show();
+                    $('.main-bg').addClass('bounceIn').removeClass('bounceOut');
+                },27000)
+                setTimeout(function () {
+                    $('.main-bg').addClass('bounceOut').removeClass('bounceIn')
+                },35500)
+                // 项目经验
+                $('.project-experience').addClass('flash flash-4');
+                setTimeout(function () {
+                    $('.professional-skill-detail').hide().next().show();
+                    $('.main-bg').addClass('bounceIn').removeClass('bounceOut');
+                },36000)
+                setTimeout(function () {
+                    $('.main-bg').addClass('bounceOut').removeClass('bounceIn')
+                },44500)
+                // 附属信息
+                $('.satellite-information').addClass('flash flash-5');
+                setTimeout(function () {
+                    $('.project-experience-detail').hide().next().show(function () {
+                        $(this).find('.flex-middle-center').removeClass('flex-middle-center');
+                    });
+                    $('.main-bg').addClass('bounceIn').removeClass('bounceOut');
+                },45000)
+            }
+            function allFlash(t) {
+                setTimeout(function () {
+                    $('#popup').empty().siblings('#popup-all').animate({'display':'block'}, function () {
+                        $('.banner-title li').on('click', function(event) {
+                            event.preventDefault();
+                            var index = $(this).index();
+                            $('.banner-list .banner-item').eq(index).addClass('active').siblings().removeClass('active');
+                        });
+                        $('.school-professional-detail').css('display', 'block');
+                        $('.map').removeClass('col-md-8').addClass('col-md-10');
+                        $('#print-content').typping();
+                        setTimeout(function () {
+                            $('.title-').css('display', 'block').removeClass('bounceOutDown').addClass('slideInLeft')
+                            $('.detail-').css('display', 'block').removeClass('bounceOutUp').addClass('slideInLeft')
+                        },5000)
+                        setTimeout(function () {
+                            $('.title-1').css('display', 'block').removeClass('bounceInDown').addClass('slideInRight')
+                            $('.detail-1').css('display', 'block').removeClass('bounceInUp').addClass('slideInRight')
+                        },5000)
+                        $('.expertise-navbar img').on('click', function(event) {
+                            event.preventDefault();
+                            var index = $(this).index();
+                            $('#popup-all .expertise-item').eq(index).slideDown().siblings().slideUp();
+                        });
+                    });
+                },t)
+            }
+			$('.slideLeft-BG').slideDown('slow',function () {
+				decompose();
+				allFlash(54000);
+                $('.ignore').on('click', function(event) {
+                    event.preventDefault();
+                    allFlash(540);
+                });
+			})
 		})
         defaults1.callback.apply(this, element);
 	};

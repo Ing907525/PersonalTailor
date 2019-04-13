@@ -41,6 +41,7 @@ a:hover {
 	text-decoration:underline
 }
 
+
 .banner-item{display: none;}
 .banner-item table{width: 100%;color:#5ef2e4;margin-top: 3rem;}
 .banner-item table tr td,.banner-item table tr th{padding: 5px 10px;border: #5ef2e4 solid 1px;}
@@ -49,7 +50,8 @@ a:hover {
 .banner-item.active{display: block;}
 .banner-title-more a{font-size: 40px;color: #5ef2e4;text-align: center;height: 0;line-height:10px;text-decoration:none;out-line:none;}
 
-.bg-music{width: 20px;height: 20px;background: rgba(255,255,255,.5) url(../img/music-ico.png) center 100% no-repeat;position: absolute;top: 20px;left: 10px;background-size: cover;z-index: 111;border-radius: 50px;cursor: pointer;}
+.bg-music, .ignore{width: 20px;height: 20px;background: rgba(255,255,255,.5) url(../img/bg/music-ico.png) center 100% no-repeat;position: absolute;top: 20px;left: 0;background-size: cover;z-index: 111;border-radius: 50px;cursor: pointer;}
+.ignore{background: rgba(255,255,255,.5) url(../img/bg/ignore.png) center 100% no-repeat;right: 10px;left: auto;background-size: cover;}
 .circle-box {
 	position:fixed;
 	right: -208px;
