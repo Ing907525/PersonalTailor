@@ -2,7 +2,7 @@
 * @Author: Alone Walker
 * @Date:   2018-07-21 19:44:31
 * @Last Modified by:   Alone Walker
-* @Last Modified time: 2019-04-13 15:55:16
+* @Last Modified time: 2019-04-13 23:32:45
 */
 ;(function (factory) {
    if (typeof define === "function" && (define.amd || define.cmd) && !jQuery) {
@@ -48,7 +48,7 @@
 					"BreathAndLife",
 					"ConquestOfParadise",
 					"DragonRider",
-					"El Dorado",
+					"ElDorado",
 					"EmpireOfAngels",
 					"Exodus",
 					"Faded",
@@ -197,8 +197,13 @@
 								$('.title-1').css('display', 'block').removeClass('bounceInDown').addClass('slideInRight')
 								$('.detail-1').css('display', 'block').removeClass('bounceInUp').addClass('slideInRight')
 							},5000)
+                            $('.expertise-navbar img').on('click', function(event) {
+                                event.preventDefault();
+                                var index = $(this).index();
+                                $('#popup-all .expertise-item').eq(index).slideDown().siblings().slideUp();
+                            });
 						});
-					},54000)
+					},54)
 				})
 			}
 			allFlash();

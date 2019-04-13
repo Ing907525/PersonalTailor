@@ -196,9 +196,9 @@ a:hover {
 /* 专业技能-UI设计 */
 .psd-title,.html-css-title,.jquery-js-title{color: rgb(94,242,228);height: 30px;margin-bottom: 4%;}
 .psd-main,.html-css-main,.jquery-js-main{background: url(../img/bg/psd-main-bg.png) center no-repeat;background-size: 100% 100%;}
-.psd-main ul {display: inline-block;}
-.psd-main ul li{height: 100%;}
-.psd-main img{height: 10%;width: 80%;}
+.psd-main ul {display: inline-block;overflow-y: scroll;}
+.psd-main ul li{max-height: 48%;margin-bottom: 1rem;display: flex;}
+.psd-main img{max-width: 100%;max-height: 100%;}
 .html-css-main,.jquery-js-main{padding-bottom: 2%;}
 .component-package-text-p{
     background: url(../img/bg/title-text-bg.png) center no-repeat;
@@ -701,6 +701,13 @@ ul a span {
 #popup-all .job-intentions img{width: calc(100% - 30px);}
 #popup-all .star{right: -12%;}
 #popup-all .wed-detail ul li h4 {margin: 0;}
+#popup-all .expertise-container{height: 100%;}
+#popup-all .expertise-item{display: none;}
+#popup-all .expertise-item.active{display: block;}
+#popup-all .expertise-navbar{position: absolute;top: 33%;left: 0%;width: 60px;}
+#popup-all .expertise-navbar img{width: 60px;margin-bottom: 1rem;}
+#popup-all .psd-title,.html-css-title,.jquery-js-title{margin-bottom: 0;margin-top: 3%;}
+#popup-all .html-css-title{margin-left: 37.5%;}
 .list-inline{margin: 0;}
 .progress{height: 10px;background-color: #01a4f3;}
 .progress-bar{/* background-color: #f19149; */height: 10px;}

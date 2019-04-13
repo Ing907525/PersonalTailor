@@ -46,6 +46,4 @@ require(['jquery', 'bootstrap', 'Typping', 'circleToggle', 'lineProgressbar'], f
 		backgroundColor:'rgba(0,0,0,0.2)',
 		height: '32px'
 	});
-	console.log($('.banner-title ul li'))
-	
 })

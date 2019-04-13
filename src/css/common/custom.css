@@ -211,7 +211,101 @@ input[type="checkbox"]:checked + i,input[type="radio"]:checked + i {background:#
 input[type="checkbox"]:disabled + i,input[type="radio"]:disabled + i {border-color:#ff8201;}
 input[type="checkbox"]:checked:disabled + i,input[type="radio"]:checked:disabled + i {background:#ff8201;}
 /* 复选框结束 */
-
-
+/* 自定义滚动条 */
+.scroll-theme-1::-webkit-scrollbar {
+    width:8px;
+}
+.scroll-theme-1::-webkit-scrollbar-track {
+    background-color:#01a4f3;
+    -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    border-radius:2em;
+}
+.scroll-theme-1::-webkit-scrollbar-thumb {
+    background-color:#00fff6;
+    -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    border-radius:2em;
+}
+.scroll-theme-2::-webkit-scrollbar {
+    width:8px;
+}
+.scroll-theme-2::-webkit-scrollbar-track {
+    background-color:#fff;
+    -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    border-radius:2em;
+    border:1px solid #ccc;
+}
+.scroll-theme-2::-webkit-scrollbar-thumb {
+    background-color:#F90;
+    background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    border-radius:2em;
+}
+.scroll-theme-3::-webkit-scrollbar {
+    width:12px;
+}
+.scroll-theme-3::-webkit-scrollbar-track {
+    background-color:#f5f5f5;
+    -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    border-radius:2em;
+}
+.scroll-theme-3::-webkit-scrollbar-thumb {
+    border-radius:10px;
+    background-color:#FFF;
+    background-image:-webkit-gradient(linear,40% 0%,75% 84%,from(#4D9C41),to(#19911D),color-stop(.6,#54DE5D));
+    -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    border-radius:2em;
+}
+.scroll-theme-4::-webkit-scrollbar {
+    width:12px;
+    height:12px;
+}
+.scroll-theme-4::-webkit-scrollbar-track {
+    background-color:#f5f5f5;
+    -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    border-radius:2em;
+}
+.scroll-theme-4::-webkit-scrollbar-thumb {
+    border-radius:10px;
+    background-color:#F90;
+    background-image:-webkit-linear-gradient(90deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    border-radius:2em;
+}
+.scroll-theme-5::-webkit-scrollbar {
+    width:12px;
+    height:12px;
+}
+.scroll-theme-5::-webkit-scrollbar-track {
+    background-color:#f5f5f5;
+}
+.scroll-theme-5::-webkit-scrollbar-thumb {
+    background-color:#d52828;
+}
+.scroll-theme-ie {
+    scrollbar-arrow-color:#f4ae21;
+    /**//*三角箭头的颜色*/
+    scrollbar-face-color:#333;
+    /**//*立体滚动条的颜色*/
+    scrollbar-3dlight-color:#666;
+    /**//*立体滚动条亮边的颜色*/
+    scrollbar-highlight-color:#666;
+    /**//*滚动条空白部分的颜色*/
+    scrollbar-shadow-color:#999;
+    /**//*立体滚动条阴影的颜色*/
+    scrollbar-darkshadow-color:#666;
+    /**//*立体滚动条强阴影的颜色*/
+    scrollbar-track-color:#666;
+    /**//*立体滚动条背景颜色*/
+    scrollbar-base-color:#f8f8f8;
+    /**//*滚动条的基本颜色*/
+}
 
 
